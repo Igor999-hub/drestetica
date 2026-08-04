@@ -7,9 +7,9 @@ const SITE_CONFIG = {
   // Nome da marca/negócio (aparece no cabeçalho, título da aba e rodapé)
   brandName: "Dr Soluções Estéticas",
 
-  // Número de WhatsApp no formato internacional, SOMENTE NÚMEROS
-  // 55 (Brasil) + 37 (DDD) + número.
-  whatsappNumber: "5537999855160",
+  // Link direto do WhatsApp (gerado no app do WhatsApp Business).
+  // Todos os botões verdes do site usam este link.
+  whatsappLink: "https://wa.me/message/IXG2HLPUDNPHO1",
 
   // Mensagem padrão enviada quando o cliente clica em "Fale conosco" (sem produto específico)
   whatsappMensagemPadrao: "Olá! Vi o site e gostaria de mais informações sobre os produtos.",
@@ -18,13 +18,13 @@ const SITE_CONFIG = {
   cidade: "Arcos, MG",
 
   // Endereço completo (opcional — deixe vazio "" se não quiser exibir)
-  endereco: "",
+  endereco: "Rua Arlindo Rodrigues de Miranda, 515 — Cidade Nova",
 
   // Instagram (deixe "" para ocultar o link no rodapé/contato)
   instagram: "",
 
   // Horário de atendimento (texto livre)
-  horario: "Segunda a Sábado, 9h às 18h",
+  horario: "Segunda à Sexta, 12:30 as 18h",
 
   // Mostrar os preços nos cards? true = mostra / false = esconde
   mostrarPrecos: true,

@@ -232,8 +232,17 @@ h1, h2 { font-family: var(--fonte-titulo); font-weight: 700; color: var(--azul-e
   font-weight: 600;
 }
 
+.sobre-foto img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--raio);
+  display: block;
+}
+
 .sobre-texto h2 { font-size: 2rem; margin-bottom: 18px; }
-.sobre-texto p { color: var(--texto-claro); font-size: 1.02rem; }
+.sobre-texto p { color: var(--texto-claro); font-size: 1.02rem; margin-bottom: 14px; }
+.sobre-texto p:last-child { margin-bottom: 0; }
 
 /* ===================== PRODUTOS ===================== */
 .produtos { padding: 90px 0; background: var(--branco); }
@@ -470,7 +479,7 @@ h1, h2 { font-family: var(--fonte-titulo); font-weight: 700; color: var(--azul-e
 /* ===================== RESPONSIVO ===================== */
 @media (max-width: 900px) {
   .sobre-inner { grid-template-columns: 1fr; }
-  .foto-placeholder { max-width: 320px; margin: 0 auto; }
+  .foto-placeholder, .sobre-foto img { max-width: 320px; margin: 0 auto; }
 }
 
 @media (max-width: 768px) {

@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // -------------------- Configurações gerais --------------------
 function montarLinkWhatsapp(mensagem) {
   const texto = encodeURIComponent(mensagem);
-  return `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${texto}`;
+  return `${SITE_CONFIG.whatsappLink}?text=${texto}`;
 }
 
 function aplicarConfiguracoes() {
@@ -35,6 +35,13 @@ function aplicarConfiguracoes() {
   document.getElementById("whatsappFlutuante").href = linkPadrao;
 
   document.getElementById("contatoCidade").textContent = `Atendimento em ${SITE_CONFIG.cidade}`;
+
+  const enderecoEl = document.getElementById("contatoEndereco");
+  if (SITE_CONFIG.endereco) {
+    enderecoEl.textContent = SITE_CONFIG.endereco;
+    enderecoEl.hidden = false;
+  }
+
   document.getElementById("contatoHorario").textContent = SITE_CONFIG.horario;
 
   const obs = document.getElementById("produtosObservacao");

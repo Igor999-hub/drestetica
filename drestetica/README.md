@@ -28,10 +28,10 @@ drestetica/
 
 ## ✏️ Como fazer as trocas mais comuns
 
-### 1. Trocar o número do WhatsApp, nome ou cidade
+### 1. Trocar o link do WhatsApp, nome ou cidade
 Abra **`js/config.js`** e edite os valores entre aspas. Exemplo:
 ```js
-whatsappNumber: "5537999855160",   // 55 + DDD 37 + número, só números
+whatsappLink: "https://wa.me/message/IXG2HLPUDNPHO1",   // link direto gerado no WhatsApp Business
 brandName: "Dr Soluções Estéticas",
 cidade: "Arcos, MG",
 ```
