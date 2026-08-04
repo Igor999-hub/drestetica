@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Soluções Estéticas — Botox em Arcos, MG</title>
+  <meta name="description" content="Revenda de produtos de estética 100% focada em toxina botulínica (Botox). Atendimento em Arcos, MG. Peça pelo WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo-area">
+        <span class="logo-circle" id="logoCircle">
+          <!-- Troque este <span> por <img src="images/logo.png" alt="Logo"> quando tiver a logo pronta -->
+          <span class="logo-initials">DS</span>
+        </span>
+        <span class="brand-name">Dr Soluções Estéticas</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-search">
+        <input type="text" id="buscaInput" placeholder="Buscar produto..." aria-label="Buscar produto" />
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HOME / HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Revenda especializada em Toxina Botulínica</p>
+      <h1>Produtos de estética profissional, direto para você.</h1>
+      <p class="hero-subtitle">
+        Atendimento em <strong>Arcos, MG</strong>. Confira a linha completa de produtos
+        e faça seu pedido rapidamente pelo WhatsApp.
+      </p>
+      <a class="btn btn-whatsapp" id="heroWhatsapp" href="#" target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE ===================== -->
+  <section id="sobre" class="sobre">
+    <div class="container sobre-inner">
+      <div class="sobre-foto">
+        <!-- Troque a div abaixo por <img src="images/sobre.jpg" alt="Foto"> quando tiver a foto -->
+        <div class="foto-placeholder">
+          <span>Foto aqui</span>
+        </div>
+      </div>
+      <div class="sobre-texto">
+        <p class="eyebrow">Sobre nós</p>
+        <h2>Quem cuida da sua beleza</h2>
+        <p>
+          Este é um texto de exemplo sobre a trajetória, experiência e cuidado no
+          fornecimento de produtos de estética. Substitua por uma apresentação
+          pessoal contando a história, a experiência na área e o compromisso
+          com a qualidade dos produtos revendidos em Arcos, MG.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUTOS ===================== -->
+  <section id="produtos" class="produtos">
+    <div class="container">
+      <p class="eyebrow center">Catálogo</p>
+      <h2 class="center">Nossos Produtos</h2>
+      <p class="center produtos-subtitle">
+        Toxinas, preenchedores, bioestimuladores, fios e insumos. Use a busca ou
+        filtre por marca para encontrar rapidamente o produto desejado.
+      </p>
+
+      <div class="produtos-busca-mobile">
+        <input type="text" id="buscaInputMobile" placeholder="Buscar produto..." aria-label="Buscar produto" />
+      </div>
+
+      <div class="filtros-marca" id="filtrosMarca">
+        <!-- Botões de filtro por marca gerados automaticamente pelo js/script.js -->
+      </div>
+
+      <div class="produtos-grid" id="produtosGrid">
+        <!-- Cards gerados automaticamente pelo js/script.js a partir de js/products.js -->
+      </div>
+
+      <p class="produtos-vazio" id="produtosVazio" hidden>
+        Nenhum produto encontrado para essa busca.
+      </p>
+
+      <p class="center produtos-observacao" id="produtosObservacao"></p>
+    </div>
+  </section>
+
+  <!-- ===================== VIDEOS ===================== -->
+  <section id="videos" class="videos">
+    <div class="container">
+      <p class="eyebrow center">Conheça de perto</p>
+      <h2 class="center">Vídeos dos Produtos</h2>
+      <p class="center produtos-subtitle">
+        Confira vídeos demonstrativos de alguns dos nossos produtos.
+      </p>
+
+      <div class="videos-grid">
+        <div class="video-card">
+          <div class="video-placeholder">
+            <!-- Substitua por: <video controls src="videos/video-01.mp4"></video> -->
+            <span>Vídeo 1</span>
+          </div>
+          <p class="video-legenda">Nome do produto — vídeo 1</p>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder">
+            <span>Vídeo 2</span>
+          </div>
+          <p class="video-legenda">Nome do produto — vídeo 2</p>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder">
+            <span>Vídeo 3</span>
+          </div>
+          <p class="video-legenda">Nome do produto — vídeo 3</p>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder">
+            <span>Vídeo 4</span>
+          </div>
+          <p class="video-legenda">Nome do produto — vídeo 4</p>
+        </div>
+        <div class="video-card">
+          <div class="video-placeholder">
+            <span>Vídeo 5</span>
+          </div>
+          <p class="video-legenda">Nome do produto — vídeo 5</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section id="contato" class="contato">
+    <div class="container contato-inner">
+      <p class="eyebrow center">Fale com a gente</p>
+      <h2 class="center">Contato</h2>
+      <p class="center contato-texto" id="contatoCidade">Atendimento em Arcos, MG</p>
+      <p class="center contato-texto" id="contatoHorario">Segunda a Sábado, 9h às 18h</p>
+
+      <div class="contato-botoes">
+        <a class="btn btn-whatsapp" id="contatoWhatsapp" href="#" target="_blank" rel="noopener">
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-outline" id="contatoInstagram" href="#" target="_blank" rel="noopener" hidden>
+          Ver Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="brand-name">Dr Soluções Estéticas</span>
+      <span>&copy; <span id="anoAtual"></span> — Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTÃO FLUTUANTE WHATSAPP ===================== -->
+  <a href="#" id="whatsappFlutuante" class="whatsapp-flutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16 3C9.373 3 4 8.373 4 15c0 2.362.687 4.564 1.875 6.417L4 29l7.771-1.84A11.94 11.94 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22a9.94 9.94 0 0 1-5.09-1.39l-.365-.217-4.61 1.092 1.126-4.49-.238-.38A9.93 9.93 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.472-7.47c-.3-.15-1.77-.873-2.044-.973-.274-.1-.474-.15-.674.15-.2.3-.774.973-.949 1.173-.174.2-.349.225-.649.075-.3-.15-1.267-.467-2.414-1.49-.892-.795-1.494-1.777-1.669-2.077-.174-.3-.019-.462.131-.611.135-.134.3-.35.45-.525.15-.174.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.674-1.623-.924-2.223-.244-.585-.492-.506-.674-.516l-.574-.01c-.2 0-.525.075-.8.375s-1.049 1.025-1.049 2.498 1.074 2.898 1.224 3.098c.15.2 2.114 3.23 5.122 4.527.716.309 1.274.494 1.71.632.719.229 1.373.197 1.89.12.577-.086 1.77-.723 2.02-1.422.25-.699.25-1.298.175-1.423-.075-.124-.275-.199-.575-.349z"/>
+    </svg>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

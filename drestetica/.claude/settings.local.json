@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp \"/c/Users/User/Downloads/Tabela DR Soluções Estéticas - Arcos e Região Centro-Oeste.pdf.pdf\" \"/c/Users/User/AppData/Local/Temp/claude/C--Users-User-OneDrive--rea-de-Trabalho-drestetica/fe6f3443-2a24-40aa-a908-83c9e1daf411/scratchpad/tabela.pdf\")",
+      "Read(//c/Users/User/AppData/Local/Temp/claude/C--Users-User-OneDrive--rea-de-Trabalho-drestetica/fe6f3443-2a24-40aa-a908-83c9e1daf411/scratchpad/**)",
+      "Bash(node extrair.js)",
+      "Bash(node -e \"const m = require\\('pdf-parse'\\); console.log\\('typeof:', typeof m\\); console.log\\('keys:', Object.keys\\(m\\)\\);\")",
+      "Bash(node -e \"const {PDFParse}=require\\('pdf-parse'\\); console.log\\(Object.getOwnPropertyNames\\(PDFParse.prototype\\)\\);\")",
+      "Bash(node tabela.js)",
+      "Bash(node screenshot.js)"
+    ]
+  }
+}
