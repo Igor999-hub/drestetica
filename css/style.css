@@ -332,18 +332,30 @@ h1, h2 { font-family: var(--fonte-titulo); font-weight: 700; color: var(--azul-e
 }
 
 .produto-imagem {
+  position: relative;
   aspect-ratio: 1 / 1;
   background: linear-gradient(150deg, var(--azul-claro), var(--azul-escuro));
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+.produto-imagem-fallback {
   color: var(--dourado-claro);
   font-weight: 600;
   font-size: 0.9rem;
   text-align: center;
   padding: 12px;
 }
-.produto-imagem img { width: 100%; height: 100%; object-fit: cover; }
+/* Imagem cobre o fundo/fallback quando carrega. Fundo branco: as fotos são quadradas com fundo branco. */
+.produto-imagem img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #ffffff;
+}
 
 .produto-corpo {
   padding: 20px;

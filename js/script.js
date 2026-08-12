@@ -66,14 +66,20 @@ function criarCardProduto(produto) {
 
   const imagem = document.createElement("div");
   imagem.className = "produto-imagem";
-  imagem.textContent = produto.nome;
 
+  // Texto de fallback (fica atrás; aparece só quando a foto não existe / falha)
+  const fallback = document.createElement("span");
+  fallback.className = "produto-imagem-fallback";
+  fallback.textContent = produto.nome;
+  imagem.appendChild(fallback);
+
+  // A imagem entra na página imediatamente, sobreposta ao fallback.
+  // (NÃO usar append só no onload + lazy: isso causa deadlock e a foto nunca aparece.)
   const img = document.createElement("img");
   img.src = produto.imagem;
   img.alt = produto.nome;
-  img.loading = "lazy";
-  img.onerror = () => { img.remove(); };
-  img.onload = () => { imagem.textContent = ""; imagem.appendChild(img); };
+  img.addEventListener("error", () => { img.remove(); });
+  imagem.appendChild(img);
 
   const corpo = document.createElement("div");
   corpo.className = "produto-corpo";
