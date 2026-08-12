@@ -386,39 +386,6 @@ h1, h2 { font-family: var(--fonte-titulo); font-weight: 700; color: var(--azul-e
   font-style: italic;
 }
 
-/* ===================== VIDEOS ===================== */
-.videos { padding: 90px 0; }
-
-.videos h2 { font-size: 2rem; margin-bottom: 10px; }
-
-.videos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 26px;
-  margin-top: 40px;
-}
-
-.video-card { text-align: center; }
-
-.video-placeholder {
-  aspect-ratio: 9 / 16;
-  border-radius: var(--raio);
-  background: linear-gradient(160deg, var(--azul), var(--azul-escuro));
-  border: 2px dashed var(--dourado);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--dourado-claro);
-  font-weight: 600;
-}
-.video-placeholder video { width: 100%; height: 100%; border-radius: var(--raio); object-fit: cover; }
-
-.video-legenda {
-  margin-top: 10px;
-  font-size: 0.88rem;
-  color: var(--texto-claro);
-}
-
 /* ===================== CONTATO ===================== */
 .contato {
   padding: 90px 0;
