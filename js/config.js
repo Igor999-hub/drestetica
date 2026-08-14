@@ -9,7 +9,7 @@ const SITE_CONFIG = {
 
   // Link direto do WhatsApp (gerado no app do WhatsApp Business).
   // Todos os botões verdes do site usam este link.
-  whatsappLink: "https://wa.me/message/IXG2HLPUDNPHO1",
+  whatsappLink: "https://wa.me/5537999855160",
 
   // Mensagem padrão enviada quando o cliente clica em "Fale conosco" (sem produto específico)
   whatsappMensagemPadrao: "Olá! Vi o site e gostaria de mais informações sobre os produtos.",
